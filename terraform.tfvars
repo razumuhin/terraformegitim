@@ -6,3 +6,5 @@ password  = "g8vVKGEA8L!"
 vsphere_server_name = "labvcenter.anadolu.edu.tr"
 create_ssh_folder_script_path = "create_ssh_folder.sh"
 instance_count = 1
+dns_list = ["212.175.41.103"]
+gateway = "10.43.1.0"
