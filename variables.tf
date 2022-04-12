@@ -31,9 +31,9 @@ variable "instance_count"{
 }
 
 variable "gateway" {
-  default = "10.43.1.0"
+    type = string
 }
 
 variable "dns_list" {
-  default = "212.175.41.103"
+     type= list(string)
 }

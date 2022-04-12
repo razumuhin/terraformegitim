@@ -75,11 +75,13 @@ clone {
         domain    = "anadolu.edu.tr"
       }
       network_interface {
-        ipv4_address = "10.43.1.44"
-        ipv4_netmask = 24
-      }
+        ipv4_address    = "10.43.1.26"
+        ipv4_netmask    = 22
+        #dns_server_list = ["193.140.21.38", "212.175.41.103"]
+        #network_id      = data.vsphere_network.network.id
+  }
       ipv4_gateway    = var.gateway
-      dns_server_list = [var.dns_list]
+      dns_server_list = var.dns_list
     }
   }
 
